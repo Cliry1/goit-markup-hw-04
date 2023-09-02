@@ -187,11 +187,6 @@ nav, .nav-list, .header-logo , .contacts {
   letter-spacing: 0.32px;
   margin: 0;
 }
-.section-benefits-list-svg{
-  width: 64px;
-  height: 64px;
-
-}
 .section-benefits-list-box{
   display: flex;
   align-items: center;
@@ -318,12 +313,12 @@ nav, .nav-list, .header-logo , .contacts {
 .section-portfolio-list-content{
   width: calc((100% - 48px) / 3); 
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-portfolio-list-content-box{
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay{
@@ -345,7 +340,7 @@ nav, .nav-list, .header-logo , .contacts {
 .section-portfolio-list-content:hover .overlay, .section-portfolio-list-content:focus .overlay{
   transform: translateY(0);
 }
-.section-portfolio-list-content:hover .section-portfolio-list-content-box, .section-portfolio-list-content:focus .section-portfolio-list-content-box{
+.section-portfolio-list-content:hover .section-portfolio-list-content, .section-portfolio-list-content:focus .section-portfolio-list-content{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
@@ -412,10 +407,7 @@ footer .container{
   padding: 0;
   margin: 0;
 }
-.footer-svg{
-  width: 24px;
-  height: 24px;
-}
+
 .footer-social-links{
   width: 40px;
   height: 40px;
