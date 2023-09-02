@@ -83,6 +83,9 @@ nav, .nav-list, .header-logo , .contacts {
 .contacts-info:hover, .contacts-info:focus{
   color: var(--iris, #404BBF);
 }
+.first-element{
+  color: #404bbf;
+}
 .first-element::after{
   content: "";
   width: 48px;
@@ -106,6 +109,8 @@ nav, .nav-list, .header-logo , .contacts {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .section.main .container{
   display: flex;
@@ -183,14 +188,19 @@ nav, .nav-list, .header-logo , .contacts {
   margin: 0;
 }
 .section-benefits-list-svg{
-  box-sizing: content-box;
   width: 64px;
   height: 64px;
-  margin: 0 auto 8px;
-  padding: 24px 100px;
+
+}
+.section-benefits-list-box{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 112px; 
+  background-color: #f4f4fd;
   border-radius: 4px;
+  margin-bottom: 8px;
   border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-  background: var(--CLOUD, #F4F4FD);
 }
 /* #endregion */
 /* #region section team */
@@ -244,9 +254,8 @@ nav, .nav-list, .header-logo , .contacts {
   margin-top: 0;
 }
 .section-team-photo-svg{
-  width: 16px;
-  height: 16px;
-  fill: var(--IRIS, #4D5AE5);
+
+  fill: var(--IRIS, #f4f4fd);
 }
 .section-team-photo-social{
   display: flex;
@@ -254,6 +263,7 @@ nav, .nav-list, .header-logo , .contacts {
   gap: 24px;
   padding: 0 16px;
   margin-top: 8px;
+  justify-content: center;
 }
 .section-team-photo-social-links{
   width: 40px;
@@ -336,7 +346,7 @@ nav, .nav-list, .header-logo , .contacts {
   transform: translateY(0);
 }
 .section-portfolio-list-content:hover .section-portfolio-list-content-box, .section-portfolio-list-content:focus .section-portfolio-list-content-box{
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 div.footer-box{
@@ -352,7 +362,10 @@ footer{
   background: var(--navyblue, #2E2F42);
   padding: 100px 0;
 }
-
+footer .container{
+  display: flex;
+  align-items: baseline;
+}
 .footer-logo{
   display: inline-block;
   color: var(--iris, #4D5AE5);
@@ -377,8 +390,9 @@ footer{
 .social-media{
   margin-left: 120px;
 }
-.footer-social-title{
-  margin: 0 0 16px 0;
+.footer-social-paragr{
+  margin: 0;
+  margin-bottom: 16px;
   color: var(--WHITE, #FFF);
   font-weight: 500;
   line-height:1.5;
@@ -414,5 +428,8 @@ footer{
 }
 .footer-social-links:hover, .footer-social-links:focus{
   background-color: var(--GREEN, #31D0AA);
+}
+.footer-logo-box{
+  margin-right: 120px
 }
 /* #endregion */
